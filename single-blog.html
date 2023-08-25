@@ -99,6 +99,24 @@
 <br><br>
 <!-- bradcam_area_end -->
 
+<div class="container mt-5 text-center users">
+    <h1 class="mb-4">Users</h1>
+    <div class="table-container">
+        <table class="table table-bordered marquee-table">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="userTable">
+                <!-- Users will be added here using JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
    <!--================Blog Area =================-->
    <section class="blog_area single-post-area section-padding container">
       <div class="container">
@@ -174,20 +192,6 @@
                                  </a>
                              </li>
                          </ul>
-                     </aside>
-
-
-                     <aside class="single_sidebar_widget newsletter_widget">
-                         <h4 class="widget_title">Newsletter</h4>
-
-                         <form action="#">
-                             <div class="form-group">
-                                 <input type="email" class="form-control" onfocus="this.placeholder = ''"
-                                     onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
-                             </div>
-                             <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                 type="submit">Subscribe</button>
-                         </form>
                      </aside>
                  </div>
              </div>
@@ -270,30 +274,6 @@
       </div>
       <footer class="footer">
         <div class="footer_top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-3 col-md-6 col-lg-3">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                address
-                            </h3>
-                            <p class="footer_text"> 200, Green road, Mongla, <br>
-                                New Yor City USA</p>
-                            <a href="#" class="line-button">Get Direction</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 col-lg-3">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Contact
-                            </h3>
-                            <p class="footer_text">+212 619920942 <br>
-                                blog-zobir-19@gmail.com</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
         </div>
         <div class="copy-right_text">
             <div class="container">
@@ -334,6 +314,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
    <!-- JS here -->
+   <script src="js/java-get.js"></script>
    <script src="js/protect-route.js"></script>
    <script src="js/get-blog.js"></script>
    <script src="js/ajax.js"></script>

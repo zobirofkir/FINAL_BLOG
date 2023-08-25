@@ -83,49 +83,29 @@
     </div>
     <br><br>
 
+    <div class="container mt-5 text-center users">
+        <h1 class="mb-4">Users</h1>
+        <div class="table-container">
+            <table class="table table-bordered marquee-table">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="userTable">
+                    <!-- Users will be added here using JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
     <section class="blog_area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mb-5 mb-lg-0">
                     <div class="blog_left_sidebar">
-                        <!-- <article class="blog_item">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="img/blog/cloud-computing-news.png" alt="">
-                                <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
-                                    <p>Jan</p>
-                                </a>
-                            </div>
-
-                            <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.html">
-                                    <h2>News about cloud computing (2021)</h2>
-                                </a>
-                                <p>1)- Edge Computing: The integration of edge computing with cloud services was becoming more prevalent. Edge computing involves processing data closer to the source of generation, reducing latency and enabling real-time processing for applications like IoT devices, autonomous vehicles, and more.
-                                    <br>
-                                    <p>2)- Multi-Cloud and Hybrid Strategies: Organizations were increasingly adopting multi-cloud and hybrid cloud strategies to avoid vendor lock-in, increase redundancy, and optimize costs by choosing the best-fit cloud providers for different workloads.</p>
-                                    <br>
-                                    <p>3)- Serverless Computing: Serverless architecture, which allows developers to focus on code without managing the underlying infrastructure, continued to gain popularity. This was seen as a way to enhance scalability and efficiency.</p>
-                                    <br>
-                                    <p>4)- Containerization and Kubernetes: The use of containers (like Docker) and container orchestration platforms (such as Kubernetes) was on the rise, simplifying application deployment, scalability, and management.</p>
-                                    <br>
-                                    <p>5)- AI and Cloud Integration: Cloud providers were offering AI and machine learning services, enabling developers to build AI-driven applications without the need for extensive AI expertise.</p>
-                                    <br>
-                                    <p>6)- Security and Compliance: Cloud security remained a key concern. Efforts to enhance security measures and compliance frameworks were ongoing to address potential vulnerabilities and ensure data protection.</p>
-                                    <br>
-                                    <p>7)- Quantum Computing and Cloud: Some cloud providers were exploring ways to integrate quantum computing capabilities into their platforms, potentially offering enhanced computing power for specific applications.</p>
-                                    <br>
-                                    <p>8)- Green Cloud Computing: With increasing awareness of environmental impact, there was a growing emphasis on making cloud data centers more energy-efficient and environmentally friendly.</p>
-                                    <br>
-                                    <p>9)- 5G Integration: The rollout of 5G networks was expected to impact cloud computing by enabling faster data transfer, reducing latency, and supporting more real-time applications.</p>
-                                    <br>
-                                </p>
-                                <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                </ul>
-                            </div>
-                        </article> -->
 
                         <section class="blog_area section-padding" id="blogPostsContainer">
                             <br>
@@ -220,25 +200,46 @@
                                 </li>
                             </ul>
                         </aside>
-
-
-                        <aside class="single_sidebar_widget newsletter_widget">
-                            <h4 class="widget_title">Newsletter</h4>
-
-                            <form action="#">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
-                                </div>
-                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                    type="submit">Subscribe</button>
-                            </form>
-                        </aside>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="container mt-5 text-center comments">
+        <h1 class="mb-4">Comments</h1>
+        <div id="commentList">
+            <!-- Comments will be added here using JavaScript -->
+        </div>
+    </div>
+    <br><br>
+
+
+    <div class="container mt-5">
+        <h2>Add a Comment</h2>
+        <form id="commentForm" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="website" class="form-label">Website</label>
+                <input type="url" class="form-control" id="website" name="website">
+            </div>
+            <div class="mb-3">
+                <label for="comment" class="form-label">Comment</label>
+                <textarea class="form-control" id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" id="send_comment">Submit Comment</button>
+        </form>
+    </div>
+
+    <br><br><br>
+
 
 
     <footer class="footer">
@@ -305,6 +306,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </footer>
                 
         <!-- JS here -->
+        <script src="js/ajax_comment.js"></script>
+        <script src="js/ajax-get-comment.js"></script>
+        <script src="js/comment-ran.js"></script>
+        <script src="js/java-get.js"></script>
         <script src="js/protect-route.js"></script>
         <script src="js/get_cloud_blog.js"></script>
         <script src="js/ajax.js"></script>

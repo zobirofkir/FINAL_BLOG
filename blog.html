@@ -97,6 +97,24 @@
     </div>
         <!-- bradcam_area_end -->
 
+        <div class="container mt-5 text-center users">
+            <h1 class="mb-4">Users</h1>
+            <div class="table-container">
+                <table class="table table-bordered marquee-table">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userTable">
+                        <!-- Users will be added here using JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+
 
     <!--================Blog Area =================-->
     <section class="blog_area section-padding">
@@ -104,135 +122,11 @@
             <div class="row">
                 <div class="col-lg-8 mb-5 mb-lg-0">
                     <div class="blog_left_sidebar">
-                        <!-- <article class="blog_item">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="img/blog/cloud-computing-news.png" alt="">
-                                <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
-                                    <p>Jan</p>
-                                </a>
-                            </div>
-
-                            <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.html">
-                                    <h2>News about cloud computing (2021)</h2>
-                                </a>
-                                <p>1)- Edge Computing: The integration of edge computing with cloud services was becoming more prevalent. Edge computing involves processing data closer to the source of generation, reducing latency and enabling real-time processing for applications like IoT devices, autonomous vehicles, and more.
-                                    <br>
-                                    <p>2)- Multi-Cloud and Hybrid Strategies: Organizations were increasingly adopting multi-cloud and hybrid cloud strategies to avoid vendor lock-in, increase redundancy, and optimize costs by choosing the best-fit cloud providers for different workloads.</p>
-                                    <br>
-                                    <p>3)- Serverless Computing: Serverless architecture, which allows developers to focus on code without managing the underlying infrastructure, continued to gain popularity. This was seen as a way to enhance scalability and efficiency.</p>
-                                    <br>
-                                    <p>4)- Containerization and Kubernetes: The use of containers (like Docker) and container orchestration platforms (such as Kubernetes) was on the rise, simplifying application deployment, scalability, and management.</p>
-                                    <br>
-                                    <p>5)- AI and Cloud Integration: Cloud providers were offering AI and machine learning services, enabling developers to build AI-driven applications without the need for extensive AI expertise.</p>
-                                    <br>
-                                    <p>6)- Security and Compliance: Cloud security remained a key concern. Efforts to enhance security measures and compliance frameworks were ongoing to address potential vulnerabilities and ensure data protection.</p>
-                                    <br>
-                                    <p>7)- Quantum Computing and Cloud: Some cloud providers were exploring ways to integrate quantum computing capabilities into their platforms, potentially offering enhanced computing power for specific applications.</p>
-                                    <br>
-                                    <p>8)- Green Cloud Computing: With increasing awareness of environmental impact, there was a growing emphasis on making cloud data centers more energy-efficient and environmentally friendly.</p>
-                                    <br>
-                                    <p>9)- 5G Integration: The rollout of 5G networks was expected to impact cloud computing by enabling faster data transfer, reducing latency, and supporting more real-time applications.</p>
-                                    <br>
-                                </p>
-                                <ul class="blog-info-link">
-                                    <li><a href="comment.html"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                </ul>
-                            </div>
-                        </article>
-
-                        <article class="blog_item">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="img/blog/cyber-security.png" alt="">
-                                <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
-                                    <p>Jan</p>
-                                </a>
-                            </div>
-
-                            <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.html">
-                                    <h2>New about cyber security (2021)</h2>
-                                </a>
-                                <p>1)- Ransomware Attacks: Ransomware attacks were on the rise, targeting organizations of all sizes. Cybercriminals were increasingly using sophisticated techniques to breach systems, encrypt data, and demand ransoms for its release.</p>
-                                <br>
-                                <p>2)- Supply Chain Attacks: Supply chain attacks gained attention due to their potential to compromise multiple organizations through a single breach. The SolarWinds breach, discovered in late 2020, highlighted the risks associated with targeting software vendors to infiltrate customer networks.</p>
-                                <br>
-                                <p>3)- Zero-Day Vulnerabilities: Zero-day vulnerabilities, which are previously unknown software vulnerabilities, continued to be a concern. Exploiting these vulnerabilities allowed attackers to gain unauthorized access to systems before patches could be developed and deployed.</p>
-                                <br>
-                                <p>4)- Remote Work Security: The COVID-19 pandemic led to a rapid increase in remote work, which presented new challenges for cybersecurity. Organizations had to secure remote endpoints, implement secure communication tools, and ensure employees followed best security practices outside of the office environment.</p>
-                                <br>
-                                <p>5)- Authentication and Identity Protection: As more services moved online, the importance of strong authentication methods, such as multi-factor authentication (MFA), increased. Protecting user identities and preventing unauthorized access became a top priority.</p>
-                                <br>
-                                <p>6)- Artificial Intelligence in Cybersecurity: AI and machine learning were being utilized in cybersecurity to identify patterns, detect anomalies, and automate responses to potential threats. However, there were concerns about adversaries also using AI to launch more sophisticated attacks.</p>
-                                <br>
-                                <p>7)- Regulations and Compliance: Regulations like the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA) continued to influence cybersecurity practices, emphasizing data protection and privacy.</p>
-                                <br>
-                                <p>8)- Cybersecurity Skills Gap: The shortage of skilled cybersecurity professionals remained a significant challenge for organizations, making it difficult to defend against increasingly complex threats.</p>
-                                <br>
-                                <p>9)- Cloud Security: As more data and services were migrated to the cloud, ensuring the security of cloud environments became paramount. Organizations needed to implement proper configurations and security measures to protect sensitive data.</p>
-                                <br>
-                                <p>10)- IoT Security: The growth of Internet of Things (IoT) devices brought new security challenges due to their potential vulnerabilities and the difficulty of keeping them updated and patched.</p>
-                                <br>
-                                <ul class="blog-info-link">
-                                    <li><a href="comment.html"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                </ul>
-                            </div>
-                        </article>
-
-                        <article class="blog_item">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="img/blog/Web-developement.png" alt="">
-                                <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
-                                    <p>Jan</p>
-                                </a>
-                            </div>
-
-                            <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.html">
-                                    <h2>News about Web-developement (2021)</h2>
-                                </a>
-                                <p>1)- Responsive and Mobile-First Design: Web developers continued to focus on creating websites that are responsive and optimized for mobile devices. Mobile-first design principles became more important due to the increasing use of smartphones and tablets for browsing.</p>
-                                <br>
-                                <p>2)- Progressive Web Apps (PWAs): PWAs gained popularity as they combine the best of both web and mobile applications. They offer improved performance, offline access, and a more app-like experience for users.</p>
-                                <br>
-                                <p>3)- JavaScript Frameworks and Libraries: JavaScript frameworks and libraries like React, Angular, and Vue.js continued to be widely used for building dynamic and interactive web applications. Developers focused on creating single-page applications (SPAs) for a smoother user experience.</p>
-                                <br>
-                                <p>4)- Jamstack Architecture: Jamstack (JavaScript, APIs, Markup) architecture gained momentum. It promotes separating the front-end and back-end of websites and apps, leading to improved security, performance, and scalability.</p>
-                                <br>
-                                <p>5)- Serverless Architecture: Serverless computing was on the rise, allowing developers to focus on writing code without managing the underlying infrastructure. This approach often leads to quicker development and cost savings.</p>
-                                <br>
-                                <p>6)- WebAssembly (Wasm): WebAssembly, a binary instruction format for the web, enabled running code written in languages like C, C++, and Rust directly in browsers. This offered performance improvements for web applications.</p>
-                                <br>
-                                <p>7)- Headless CMS: Headless content management systems (CMS) allowed developers to separate content creation from presentation. This flexibility was particularly useful for delivering content to various platforms and devices.</p>
-                                <br>
-                                <p>8)- Security and Privacy: With growing concerns about data breaches and privacy, web developers focused on implementing strong security measures, including HTTPS adoption, secure authentication methods, and compliance with data protection regulations.</p>
-                                <br>
-                                <p>9)- Accessibility (A11y): The importance of web accessibility grew, with developers striving to create websites and applications that are usable by people with disabilities.</p>
-                                <br>
-                                <p>10)- API-First Development: APIs played a crucial role in web development, enabling seamless integration between various services and applications.</p>
-                                <br>
-                                <p>11)- Low-Code/No-Code Development: The trend of low-code and no-code development platforms continued to rise, allowing individuals with limited coding experience to create functional web applications.</p>
-                                <br>
-                                <p>12)- Web Performance: Improving web performance through techniques like lazy loading, code splitting, and optimizing images remained a priority to ensure fast-loading websites.</p>
-                                <ul class="blog-info-link">
-                                    <li><a href="comment.html"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                </ul>
-                            </div>
-                        </article> -->
 
                         <section class="blog_area section-padding" id="blogPostsContainer">
                             <br>
                         </section>                        
-
-
-                        
-
-
                         <nav class="blog-pagination justify-content-center d-flex">
-                            
                             <ul class="pagination">
                                 <li class="page-item">
                                     <a href="#" class="page-link" aria-label="Previous">
@@ -254,6 +148,8 @@
                         </nav>
                     </div>
                 </div>
+
+                
                 <div class="col-lg-4">
                     <div class="blog_right_sidebar">
                         <aside class="single_sidebar_widget search_widget">
@@ -340,25 +236,46 @@
                                 </li>
                             </ul>
                         </aside>
-
-
-                        <aside class="single_sidebar_widget newsletter_widget">
-                            <h4 class="widget_title">Newsletter</h4>
-
-                            <form action="#">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
-                                </div>
-                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                    type="submit">Subscribe</button>
-                            </form>
-                        </aside>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
+    <div class="container mt-5 text-center comments">
+        <h1 class="mb-4">Comments</h1>
+        <div id="commentList">
+            <!-- Comments will be added here using JavaScript -->
+        </div>
+    </div>
+    <br><br>
+
+
+    <div class="container mt-5">
+        <h2>Add a Comment</h2>
+        <form id="commentForm" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="website" class="form-label">Website</label>
+                <input type="url" class="form-control" id="website" name="website">
+            </div>
+            <div class="mb-3">
+                <label for="comment" class="form-label">Comment</label>
+                <textarea class="form-control" id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" id="send_comment">Submit Comment</button>
+        </form>
+    </div>
+
+    <br><br><br>
     <!--================Blog Area =================-->
 
     <!-- footer -->
@@ -427,6 +344,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 <!-- form itself end -->
     <!-- JS here -->
+    <script src="js/java-get.js"></script>
+    <script src="js/ajax_comment.js"></script>
+    <script src="js/comment-ran.js"></script>
+    <script src="js/ajax-get-comment.js"></script>
     <script src="js/protect-route.js"></script>
     <script src="js/get-blog.js"></script>
     <script src="js/ajax.js"></script>

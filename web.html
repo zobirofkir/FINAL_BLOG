@@ -84,6 +84,24 @@
     </div>
     <br><br>
 
+    <div class="container mt-5 text-center users">
+        <h1 class="mb-4">Users</h1>
+        <div class="table-container">
+            <table class="table table-bordered marquee-table">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="userTable">
+                    <!-- Users will be added here using JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
     <section class="blog_area section-padding">
         <div class="container">
             <div class="row">
@@ -155,26 +173,45 @@
                                 </li>
                             </ul>
                         </aside>
-   
-   
-                        <aside class="single_sidebar_widget newsletter_widget">
-                            <h4 class="widget_title">Newsletter</h4>
-   
-                            <form action="#">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
-                                </div>
-                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                    type="submit">Subscribe</button>
-                            </form>
-                        </aside>
-                    </div>
+                       </div>
                 </div>
                </div>
         </div>
     </section>
 
+    <div class="container mt-5 text-center comments">
+        <h1 class="mb-4">Comments</h1>
+        <div id="commentList">
+            <!-- Comments will be added here using JavaScript -->
+        </div>
+    </div>
+    <br><br>
+
+
+    <div class="container mt-5">
+        <h2>Add a Comment</h2>
+        <form id="commentForm" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="website" class="form-label">Website</label>
+                <input type="url" class="form-control" id="website" name="website">
+            </div>
+            <div class="mb-3">
+                <label for="comment" class="form-label">Comment</label>
+                <textarea class="form-control" id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" id="send_comment">Submit Comment</button>
+        </form>
+    </div>
+
+    <br><br><br>
     
     <footer class="footer">
         <div class="footer_top">
@@ -204,32 +241,6 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="footer_top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-3 col-md-6 col-lg-3">
-                            <div class="footer_widget">
-                                <h3 class="footer_title">
-                                    address
-                                </h3>
-                                <p class="footer_text"> 200, Green road, Mongla, <br>
-                                    New Yor City USA</p>
-                                <a href="#" class="line-button">Get Direction</a>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 col-lg-3">
-                            <div class="footer_widget">
-                                <h3 class="footer_title">
-                                    Contact
-                                </h3>
-                                <p class="footer_text">+212 619920942 <br>
-                                    blog-zobir-19@gmail.com</p>
-                            </div>
-                        </div>
-    
-                    </div>
-                </div>
-            </div>
             <div class="copy-right_text">
                 <div class="container">
                     <div class="footer_border"></div>
@@ -267,6 +278,11 @@
         </footer>
         
             <!-- JS here -->
+        
+        <script src="js/ajax-get-comment.js"></script>
+        <script src="js/ajax_comment.js"></script>
+        <script src="js/comment-ran.js"></script>
+        <script src="js/java-get.js"></script>
         <script src="js/protect-route.js"></script>
         <script src="js/get_blog_web.js"></script>
         <script src="js/ajax.js"></script>
